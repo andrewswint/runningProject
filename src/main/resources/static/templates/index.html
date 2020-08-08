@@ -9,12 +9,25 @@
 <h1>My Running Project</h1>
 <div ng-app="" ng-init="km=0;miles=0">
 
+    <h2>Distance Converter</h2>
+
     <p>Kilometers to convert to miles: <input type="number" ng-model="km"></p>
     <p>Miles: {{ km / 1.609 }}</p>
 
     <p>Miles to convert to Kilometers: <input type="number" ng-model="miles"></p>
     <p>Kilometers: {{ miles * 1.609 }}</p>
 
+    <h2>Time to Event</h2>
+
+    <input type="date" id="startDate" value="2020-01-01"/>
+
+    <input type="date" id="endDate" value="2020-01-01"/>
+    <input type="button" onclick="dateDiff()" value="Click"/>
+
+    <p id="output"></p>
+
 </div>
+
+<script src="../js/index.js"></script>
 </body>
 </html>
